@@ -1,0 +1,1026 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Quet_all" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1231,19981" sap2010:WorkflowViewState.IdRef="Quet_all_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Quet_all" sap:VirtualizedContainerService.HintSize="764,19916" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Change_Xauusd" sap:VirtualizedContainerService.HintSize="722,19824" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1762.180 0% Unnamed" sap:VirtualizedContainerService.HintSize="680,19732" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="ba731ca2-1e78-4d61-aeb4-83886b64d420" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="646,19515" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'XAUUSD'" sap:VirtualizedContainerService.HintSize="604,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba731ca2-1e78-4d61-aeb4-83886b64d420" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="1722, 288, 9, 14" ElementType="Text" FriendlyName="'XAUUSD'" FullSelectorArgument="&lt;webctrl aaname='XAUUSD' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='XAUUSD' tag='SPAN' type='' class='inner-ghhqKDrt symbolNameText-ghhqKDrt' check:innerText='XAUUSD' /&gt;" Guid="6081cd0c-c350-46bc-aaa1-4965db904993" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVDhPYxAWV/pPKh4qmuISs/9v2rrvf0V1K4oCZXWj/7PmLgdjmBiKTSCNazfs+O/lFwEX650wC6wBpBkmhuE8kKJlKzf/NzSzx2oICGNoAikGaZoyfQFYA0gjuhqsAQHzH8hWbPJYNYEUgzTBnIkuj6EJ5o+QyCRwAGCzDUUTyMMgDbBgR+fDMFwTLD7QTQZpQA9BuCaQBmx+gBkGkoOJYQ0IQnhQa1L6DwCYq2449S4rPQAAAABJRU5ErkJggg==" InformativeScreenshot="46c93d21db117c7669e2e8dea148225f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1761.980 ▼ −0.01% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Kiểm tra đã được chuyển XAUUSD" sap:VirtualizedContainerService.HintSize="604,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                <ui:WaitUiElementAppear.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45ce9d1a-116d-40a4-bd86-931d38b0b1d6" InformativeScreenshot="4c364cc3059f513af1c76c8215c8bf38" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Vàng / Đô la Mỹ' tableRow='1' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:WaitUiElementAppear.Target>
+              </ui:WaitUiElementAppear>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="604,4347" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" TemplatePath="Data.xlsx" WorkbookPath="XAUUSD\Data_XAUUSD.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="570,4075" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Data_XAUUSD.xlsx - Excel" sap:VirtualizedContainerService.HintSize="528,3981" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="8390db28-ad30-4fea-b006-739d55f36e6e" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="494,3689" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1791.570 ▼ −0.04% Unnamed" sap:VirtualizedContainerService.HintSize="452,3595" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V2">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="418,3378" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Quet data 4H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '4h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="443, 122, 16, 16" ElementType="Text" FriendlyName="'4h'" FullSelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='4h' /&gt;" Guid="4bf6e2c1-e327-4bd1-996c-5b89b146db72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVDhPYxAWV/pPTTxqIOUYj4Er/8sn/f8vr4+Ljx3jNFDC8/9/TaoZqH/7v6bnbewuBIqDLILg2/8l0PRiMRCkEaQQu5c1w4/9FwXz2/7LhAP5niuh8hCMYaCozcf/yjZtQDZ2A5G9DFKLsACCUQ1UOvZfGa6AYgNBXvj4X0YJxqfUQJDrgBoQAY7A2IOAGC+jYIq9jI6pbiB5eNRASrHSfwCt6E0fvXSLtAAAAABJRU5ErkJggg==" InformativeScreenshot="d2c9816b9567465e16ed407a61ed2984.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.120 ▼ −0.71% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8030b0c-377b-4d87-9df1-e047e28824e7" InformativeScreenshot="0613b66a0c07e18762d51feefb680111" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 30m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '30m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="321, 122, 27, 16" ElementType="Text" FriendlyName="'30m'" FullSelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='30m' /&gt;" Guid="40a3d5df-f2a5-41f7-903f-15979141252f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUCAYAAAB1aeb6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVEhL7ZPBDYMwDEW7Q4XKAQkpnHpiARZgAu4Mwy4swhJMwQQuOHH4LggVipoeOPyD+Y6f7YTb/WEolC54EP0XPCoGetZkVXUUKb+hpHLepLIFb78U3IJ7il0clxqgY9tIVjTe3yuArxTL+7kZ01FWD5QYyXe+bIf9MZfPwGb4u4thsEmbd64mxUZE2JBAJN9D5cxyuFX4fO8Awym9WkoVHDezhHFduMbNyVXBg/A0l3gvHLv/aO2H4dMUOlnBF8VH4Ta+nZxNWC3HMO3mr3bG2hnAj+3twbFsQe9DoVPgv9QFD6KAcEMvU9qfBRdbL8IAAAAASUVORK5CYII=" InformativeScreenshot="2025198fa710c9ac881a14a7e78bd89e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.935 ▼ −0.66% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8c9965e-c980-4298-aab3-3ff91f63226e" InformativeScreenshot="0f68d37373fec961e75b1cff1bbd9771" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 1H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '1h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="360, 122, 16, 16" ElementType="Text" FriendlyName="'1h'" FullSelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='1h' /&gt;" Guid="8aada873-9a7b-4407-9bb6-6c2680921017" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVDhPYxAWV/pPTTxqIOUYt4H6t/9rhh/7L4okJuH5/7+m50pUdWgYu4Egw5KAmik3cOV/eZBBSR//y3t+xGHgbagaCJbXR9aPxUAZmzYwW9QGh4FAy2SUIHywmqTb/yWQ1OAMQ5wGIntZ6dh/ZSQLQHjUQAQe/AaSi0cNpBQr/QcAUe1CzmLuF/gAAAAASUVORK5CYII=" InformativeScreenshot="1cc4206e6285ed0f64dcc1d46fcd2a91.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.235 ▼ −0.7% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e017635b-101e-417e-9d2a-a746a62f99cd" InformativeScreenshot="350b5aca629551ba8091bd6823b05976" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 5m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '5m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="250, 122, 19, 16" ElementType="Text" FriendlyName="'5m'" FullSelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-e0RYyFXU' check:innerText='5m' /&gt;" Guid="111f3e09-96f4-42e5-b22f-12d607a810f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVEhL7ZK9DYMwFISzQ4RCgRTJrqiygBdgAnqGYRcvwhJMwQQX/wj7PeNIAYdUFFfwdHz23fPt/hA4Sxc8q//C6w5oB6oFjeCeb5XANZ7DjJrNjovDxQTZT6jojMimkkqj6XkqmlaqMfg5/DUb+BKMaSUeEmcrNADN/y1JzuCVsmBSizMnsE4HfwrztUb/ZqGpKDALZzXuhLs05fDRLYouxMoC11nRzfOdx+/iWvwBBvLptfyy8xJd8KxOhAu8AZvLp+CTtRweAAAAAElFTkSuQmCC" InformativeScreenshot="31a7c0a82f496859bb0b3cdb0a1eddd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1762.935 ▲ +0.04% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_5">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="acbafb7a-13db-4bc5-b7cf-4a4a04216c7f" InformativeScreenshot="a77c1e124f1e8f5764cabf3d8f5f3790" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_7" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_8" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="79a841aa900afa258a285cf9a5b2d1be.png" Selector="&lt;html app='chrome.exe' title='XAUUSD 1791.570 ▼ −0.04% Unnamed' /&gt;" Url="https://vn.tradingview.com/chart/BaRpJgkx/" />
+                                </uix:NApplicationCard.TargetApp>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 119, 957, 804" Arguments="c:\users\pc\documents\uipath\automatic\automatic\xauusd\data_xauusd.xlsx" FilePath="C:\Program Files\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVFhH7Zc9SEJRGIZdo9B+pRoShwhChIoQhCBbgsgpGgJpKyKIaAmClqDBoSmyLQikrbaCppaksdvUGDQ1FjQ0fvlezpGjfefcn86FkF548Hr4vvO+nh/U2L+8lK6uO3XIL1O1gyA4wkYvzsQEY2JE2OjFmZjgTEwIG704ExOciQlhoxdnYoIzMSFs9Bo5LpEXqcpq+ADd+wWnDoWhZ3eWBjYKbojfBGAn90vH/CjFt/ON9zKIX/5WgNRhke5fnlz2bk4a4zOVtcY4ntUe6ytw+nBJ0MfXpxsIYzCG8Npabz0ATGEOle/OafFsx32GskcrTbUgkjOweVV2DRFEfnqE4WojO4TSGHp9f2NrQGQBrp9rwp7fe0l8OkXJpQkaLOVcuBoTbAC579gCeR6wLVyt9QA4hFhyCPsOIPVWqFgPwF1DGeji8bapFlgNoF45dcnlrYBQo/ZEcgaC0BYBQn8dJ7byPwIERfzs0KtzfIh0dGWGKZFLRxugd26MvEguT7KT+0HY6NW3kCET/cUsO7FfhI1eXJNNhI1eXJNNhI1e9SKntcki3n/N2lyx2De7iUsgzKBEqQAAAABJRU5ErkJggg==" InformativeScreenshot="fe8deb00d93b966408cd346a49422ddf.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Data_XAUUSD.xlsx - Excel' /&gt;" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,397" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ClickType="Single" DisplayName="Click 'USDJPY'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba731ca2-1e78-4d61-aeb4-83886b64d420" Version="V1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="1722, 273, 9, 14" ElementType="Text" FriendlyName="'USDJPY'" FullSelectorArgument="&lt;webctrl aaname='USDJPY' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='USDJPY' tag='SPAN' type='' class='inner-zwnrr543 symbolNameText-zwnrr543' check:innerText='USDJPY' /&gt;" Guid="86986603-baa6-4253-a4c8-92ad665e60aa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVDhPYxAWV/pPKh4qmpTVjf7Pmrv8f1xiNoYikNiylZvh/FFNUD5lmkC4d8Ks/xXVrXA+DIPEQAbC+CiaQCau3bDjv5dfBFzM0MwebAuyYSiaQBikAaRx09Z9cIzuZAxNxOBBrUnpPwBSVGe8AoOarQAAAABJRU5ErkJggg==" InformativeScreenshot="4bd1283a902847d95426e9c9322ca4b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USDJPY 136.939 ▲ +0.13% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Kiểm tra đã được chuyển XAUUSD" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_6">
+                  <ui:WaitUiElementAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45ce9d1a-116d-40a4-bd86-931d38b0b1d6" InformativeScreenshot="a787119657ef3ffa0ce5b4a7cce10d37" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Đô la Mỹ / Yên Nhật' tableRow='1' tag='DIV' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitUiElementAppear.Target>
+                </ui:WaitUiElementAppear>
+              </Sequence>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="604,4347" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" TemplatePath="Data.xlsx" WorkbookPath="USDJPY\Data_USDJPY.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="570,4075" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Data_USDJPY.xlsx - Excel" sap:VirtualizedContainerService.HintSize="528,3981" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="8390db28-ad30-4fea-b006-739d55f36e6e" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="494,3689" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1791.570 ▼ −0.04% Unnamed" sap:VirtualizedContainerService.HintSize="452,3595" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V2">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="418,3378" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Quet data 4H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '4h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="443, 122, 16, 16" ElementType="Text" FriendlyName="'4h'" FullSelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='4h' /&gt;" Guid="4bf6e2c1-e327-4bd1-996c-5b89b146db72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVDhPYxAWV/pPTTxqIOUYj4Er/8sn/f8vr4+Ljx3jNFDC8/9/TaoZqH/7v6bnbewuBIqDLILg2/8l0PRiMRCkEaQQu5c1w4/9FwXz2/7LhAP5niuh8hCMYaCozcf/yjZtQDZ2A5G9DFKLsACCUQ1UOvZfGa6AYgNBXvj4X0YJxqfUQJDrgBoQAY7A2IOAGC+jYIq9jI6pbiB5eNRASrHSfwCt6E0fvXSLtAAAAABJRU5ErkJggg==" InformativeScreenshot="d2c9816b9567465e16ed407a61ed2984.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.120 ▼ −0.71% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_7">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8030b0c-377b-4d87-9df1-e047e28824e7" InformativeScreenshot="c5c6b3b8e10129b4935613c1c586091d" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_9" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_10" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 30m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '30m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="321, 122, 27, 16" ElementType="Text" FriendlyName="'30m'" FullSelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='30m' /&gt;" Guid="40a3d5df-f2a5-41f7-903f-15979141252f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUCAYAAAB1aeb6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVEhL7ZPBDYMwDEW7Q4XKAQkpnHpiARZgAu4Mwy4swhJMwQQuOHH4LggVipoeOPyD+Y6f7YTb/WEolC54EP0XPCoGetZkVXUUKb+hpHLepLIFb78U3IJ7il0clxqgY9tIVjTe3yuArxTL+7kZ01FWD5QYyXe+bIf9MZfPwGb4u4thsEmbd64mxUZE2JBAJN9D5cxyuFX4fO8Awym9WkoVHDezhHFduMbNyVXBg/A0l3gvHLv/aO2H4dMUOlnBF8VH4Ta+nZxNWC3HMO3mr3bG2hnAj+3twbFsQe9DoVPgv9QFD6KAcEMvU9qfBRdbL8IAAAAASUVORK5CYII=" InformativeScreenshot="2025198fa710c9ac881a14a7e78bd89e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.935 ▼ −0.66% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_8">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8c9965e-c980-4298-aab3-3ff91f63226e" InformativeScreenshot="8b9da25da782ae9a09e28c31bf9d736f" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_11" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_12" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 1H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '1h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="360, 122, 16, 16" ElementType="Text" FriendlyName="'1h'" FullSelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='1h' /&gt;" Guid="8aada873-9a7b-4407-9bb6-6c2680921017" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVDhPYxAWV/pPTTxqIOUYt4H6t/9rhh/7L4okJuH5/7+m50pUdWgYu4Egw5KAmik3cOV/eZBBSR//y3t+xGHgbagaCJbXR9aPxUAZmzYwW9QGh4FAy2SUIHywmqTb/yWQ1OAMQ5wGIntZ6dh/ZSQLQHjUQAQe/AaSi0cNpBQr/QcAUe1CzmLuF/gAAAAASUVORK5CYII=" InformativeScreenshot="1cc4206e6285ed0f64dcc1d46fcd2a91.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.235 ▼ −0.7% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_9">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e017635b-101e-417e-9d2a-a746a62f99cd" InformativeScreenshot="c3dbff69e84ca3633541d3301b60ac68" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_13" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_14" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 5m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '5m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="250, 122, 19, 16" ElementType="Text" FriendlyName="'5m'" FullSelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-e0RYyFXU' check:innerText='5m' /&gt;" Guid="111f3e09-96f4-42e5-b22f-12d607a810f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVEhL7ZK9DYMwFISzQ4RCgRTJrqiygBdgAnqGYRcvwhJMwQQX/wj7PeNIAYdUFFfwdHz23fPt/hA4Sxc8q//C6w5oB6oFjeCeb5XANZ7DjJrNjovDxQTZT6jojMimkkqj6XkqmlaqMfg5/DUb+BKMaSUeEmcrNADN/y1JzuCVsmBSizMnsE4HfwrztUb/ZqGpKDALZzXuhLs05fDRLYouxMoC11nRzfOdx+/iWvwBBvLptfyy8xJd8KxOhAu8AZvLp+CTtRweAAAAAElFTkSuQmCC" InformativeScreenshot="31a7c0a82f496859bb0b3cdb0a1eddd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1762.935 ▲ +0.04% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_10">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="acbafb7a-13db-4bc5-b7cf-4a4a04216c7f" InformativeScreenshot="c89a962ffdfdaf91814ea3734d14db74" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_15" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_16" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="79a841aa900afa258a285cf9a5b2d1be.png" Selector="&lt;html app='chrome.exe' title='XAUUSD 1791.570 ▼ −0.04% Unnamed' /&gt;" Url="https://vn.tradingview.com/chart/BaRpJgkx/" />
+                                </uix:NApplicationCard.TargetApp>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 119, 957, 804" Arguments="c:\users\pc\documents\uipath\automatic\automatic\usdjpy\data_usdjpy.xlsx" FilePath="C:\Program Files\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVFhH7Zc9SEJRGIZdo9B+pRoShwhChIoQhCBbgsgpGgJpKyKIaAmClqDBoSmyLQikrbaCppaksdvUGDQ1FjQ0fvlezpGjfefcn86FkF548Hr4vvO+nh/U2L+8lK6uO3XIL1O1gyA4wkYvzsQEY2JE2OjFmZjgTEwIG704ExOciQlhoxdnYoIzMSFs9Bo5LpEXqcpq+ADd+wWnDoWhZ3eWBjYKbojfBGAn90vH/CjFt/ON9zKIX/5WgNRhke5fnlz2bk4a4zOVtcY4ntUe6ytw+nBJ0MfXpxsIYzCG8Npabz0ATGEOle/OafFsx32GskcrTbUgkjOweVV2DRFEfnqE4WojO4TSGHp9f2NrQGQBrp9rwp7fe0l8OkXJpQkaLOVcuBoTbAC579gCeR6wLVyt9QA4hFhyCPsOIPVWqFgPwF1DGeji8bapFlgNoF45dcnlrYBQo/ZEcgaC0BYBQn8dJ7byPwIERfzs0KtzfIh0dGWGKZFLRxugd26MvEguT7KT+0HY6NW3kCET/cUsO7FfhI1eXJNNhI1eXJNNhI1e9SKntcki3n/N2lyx2De7iUsgzKBEqQAAAABJRU5ErkJggg==" InformativeScreenshot="acdc37212005f934be3cc822b0001028.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Data_USDJPY.xlsx - Excel' /&gt;" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,397" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ClickType="Single" DisplayName="Click 'USDCHF'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba731ca2-1e78-4d61-aeb4-83886b64d420" Version="V1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="1722, 303, 9, 14" ElementType="Text" FriendlyName="'USDCHF'" FullSelectorArgument="&lt;webctrl aaname='USDCHF' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='USDCHF' tag='SPAN' type='' class='inner-zwnrr543 symbolNameText-zwnrr543' check:innerText='USDCHF' /&gt;" Guid="17c68f9e-10d4-4dd4-b0c4-5be2bdd46c5f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVDhPYxAWV/pPKh4qmpTVjf7Pmrv8f1xiNoYikNiylZvh/FFNUD5lmkC4d8Ks/xXVrXA+DIPEQAbC+CiaQCau3bDjv5dfBFzM0MwebAuyYSiaQBikAaRx09Z9cIzuZAxNxOBBrUnpPwBSVGe8AoOarQAAAABJRU5ErkJggg==" InformativeScreenshot="2f3629d8a3fba7e342b4dc04d5970b2c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USDCHF 0.96550 ▲ +0.12% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Kiểm tra đã được chuyển XAUUSD" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_11">
+                  <ui:WaitUiElementAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45ce9d1a-116d-40a4-bd86-931d38b0b1d6" InformativeScreenshot="b80b45731ec38d65c2df10cf9b8bf5d8" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Đô la Mỹ / Franc Thụy Sỹ' tableRow='1' tag='DIV' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitUiElementAppear.Target>
+                </ui:WaitUiElementAppear>
+              </Sequence>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="604,4347" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" TemplatePath="Data.xlsx" WorkbookPath="USDCHF\Data_USDCHF.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="570,4075" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Data_USDCHF.xlsx - Excel" sap:VirtualizedContainerService.HintSize="528,3981" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="8390db28-ad30-4fea-b006-739d55f36e6e" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="494,3689" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1791.570 ▼ −0.04% Unnamed" sap:VirtualizedContainerService.HintSize="452,3595" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V2">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="418,3378" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Quet data 4H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '4h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="443, 122, 16, 16" ElementType="Text" FriendlyName="'4h'" FullSelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='4h' /&gt;" Guid="4bf6e2c1-e327-4bd1-996c-5b89b146db72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVDhPYxAWV/pPTTxqIOUYj4Er/8sn/f8vr4+Ljx3jNFDC8/9/TaoZqH/7v6bnbewuBIqDLILg2/8l0PRiMRCkEaQQu5c1w4/9FwXz2/7LhAP5niuh8hCMYaCozcf/yjZtQDZ2A5G9DFKLsACCUQ1UOvZfGa6AYgNBXvj4X0YJxqfUQJDrgBoQAY7A2IOAGC+jYIq9jI6pbiB5eNRASrHSfwCt6E0fvXSLtAAAAABJRU5ErkJggg==" InformativeScreenshot="d2c9816b9567465e16ed407a61ed2984.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.120 ▼ −0.71% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_12">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8030b0c-377b-4d87-9df1-e047e28824e7" InformativeScreenshot="9043d0c7d23714897f77740501ebc883" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_17" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_18" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 30m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '30m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="321, 122, 27, 16" ElementType="Text" FriendlyName="'30m'" FullSelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='30m' /&gt;" Guid="40a3d5df-f2a5-41f7-903f-15979141252f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUCAYAAAB1aeb6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVEhL7ZPBDYMwDEW7Q4XKAQkpnHpiARZgAu4Mwy4swhJMwQQuOHH4LggVipoeOPyD+Y6f7YTb/WEolC54EP0XPCoGetZkVXUUKb+hpHLepLIFb78U3IJ7il0clxqgY9tIVjTe3yuArxTL+7kZ01FWD5QYyXe+bIf9MZfPwGb4u4thsEmbd64mxUZE2JBAJN9D5cxyuFX4fO8Awym9WkoVHDezhHFduMbNyVXBg/A0l3gvHLv/aO2H4dMUOlnBF8VH4Ta+nZxNWC3HMO3mr3bG2hnAj+3twbFsQe9DoVPgv9QFD6KAcEMvU9qfBRdbL8IAAAAASUVORK5CYII=" InformativeScreenshot="2025198fa710c9ac881a14a7e78bd89e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.935 ▼ −0.66% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_13">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8c9965e-c980-4298-aab3-3ff91f63226e" InformativeScreenshot="37f14cf533ec93dd118a2104f96a3454" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_19" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_20" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 1H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '1h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="360, 122, 16, 16" ElementType="Text" FriendlyName="'1h'" FullSelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='1h' /&gt;" Guid="8aada873-9a7b-4407-9bb6-6c2680921017" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVDhPYxAWV/pPTTxqIOUYt4H6t/9rhh/7L4okJuH5/7+m50pUdWgYu4Egw5KAmik3cOV/eZBBSR//y3t+xGHgbagaCJbXR9aPxUAZmzYwW9QGh4FAy2SUIHywmqTb/yWQ1OAMQ5wGIntZ6dh/ZSQLQHjUQAQe/AaSi0cNpBQr/QcAUe1CzmLuF/gAAAAASUVORK5CYII=" InformativeScreenshot="1cc4206e6285ed0f64dcc1d46fcd2a91.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.235 ▼ −0.7% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_14">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e017635b-101e-417e-9d2a-a746a62f99cd" InformativeScreenshot="fb3dea05e23fd957b3b33bdf73bb9038" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_21" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_22" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 5m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '5m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="250, 122, 19, 16" ElementType="Text" FriendlyName="'5m'" FullSelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-e0RYyFXU' check:innerText='5m' /&gt;" Guid="111f3e09-96f4-42e5-b22f-12d607a810f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVEhL7ZK9DYMwFISzQ4RCgRTJrqiygBdgAnqGYRcvwhJMwQQX/wj7PeNIAYdUFFfwdHz23fPt/hA4Sxc8q//C6w5oB6oFjeCeb5XANZ7DjJrNjovDxQTZT6jojMimkkqj6XkqmlaqMfg5/DUb+BKMaSUeEmcrNADN/y1JzuCVsmBSizMnsE4HfwrztUb/ZqGpKDALZzXuhLs05fDRLYouxMoC11nRzfOdx+/iWvwBBvLptfyy8xJd8KxOhAu8AZvLp+CTtRweAAAAAElFTkSuQmCC" InformativeScreenshot="31a7c0a82f496859bb0b3cdb0a1eddd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1762.935 ▲ +0.04% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_15">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="acbafb7a-13db-4bc5-b7cf-4a4a04216c7f" InformativeScreenshot="a378cc0b123ed42d265baa9a5e6912f3" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_23" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_24" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAaXSURBVFhH1ZZtbFRlFsfnEyKKjoKiInRooW/TTu9MW3lpaW87hb4hLfBl3WwXTTSriQaN2V3Xt4IxJhplWgoU+kKLoGyWIChqVhY6tLyK7vbLGokmjkBb2ipzS5EEuHee4/8597mdVirBtw+e5JdzztNnzu95bjqT6/rdRETX3N+UzNMHS3JDA8U53YPFOQYQCmMwmBPuL84J9Qazq9VHfp2QYghrB4qyo44QPaEXkv6ibBrQZc6hfs7ZMkcG9EDtWV3zqDE/LwaDuasgMRwRSzizhM6OEODMa4UBYfeg0P/V2QJtpRr30wI3DUkRD1bCfgzv122BrCFjYZ/MBf5R2U+9BTZ9TCCkxl5fQNA2cgu+icQW8EAIkFkke0dmo1HvQo16ALLozc8Sqm5T468d8rTOLRwBy9RwR9gnhzuSuNDOUpqfNZLPgJ48nzid57v2k+jRAw/yDRyBlKnBUiSH9+THBTwYfU+e3fNanm8MkDIja/N9q5RubGg7qj0ng/6IcxNbYt+Ih4+S9Jbl07mXX6DzrY3MUMNTNPRqJRlr/GS8BNZoQtZDnDXZqzVNDL2iGdStuZU2HoEdy2tXPxNUt8oSZ/Js6ZkFPiHX5Oml+OKH79KPhfhmL1ndS8j6OJvM436yjgdQ+4WFOqaydVwT5jFttdLGI/D2skjgrWXUWZVrPzIpRj69IFMi+laUkdnXy6K93Zfp0fbvqKpumJH13u4r/De61ItDVEjRWI5ljcq+6JinoL21rMq/vZokNa+VOlI6PT9TnJqfSb3LS1neZ8ToL23fUU7t0Lj8sfEC7+FDfJInRRBKMq/CPJShKz0OsLW6Lmt7ldAk26rogxW5dGpehmBwgAvv7+HLPdA4TNkvGlcDuVM/suUC7xWDeyDyCuuol0Y4JnM6EzuaFv9GQBrOerOKst5cShryog0V9FmhjyJzvXSmejEPfO9/l8kPgf8Fm4CsgZMdZC/3yrBO3CfMo2kQjiYVh0ql2JG0bqV3uXxblxq+rfcTMvnakcErj+dT5L50MfDXJ3jYw7iZBvFYouNg8F4ZsS+fgTAFwmSbIwxJzCPJhtK7XJntSwiIzDbOzLzNFfT/fK8wmtbzsPI3hijr+ejVQPjDvuz1If5M7HQ9ZHPIPDybLAnq0VnpXa4MiDPaKgXndpW3VNKqvxdSdHMDDyvF0EwIRuP7Qe8g98qIncIBDidBmCisw7Nw+yQcJhFrNkrvcnlbK6PeLRXCC6m3tQIgc18h9jet4WEPtQxTxnPnrouHWs7zZ2KfPyLF+I/3QOhBzRkkoE6IKj0O0FLRnd5STuktFZSOA3CNnNZaLv6wdqmQw3b/9xJ5MTz92XN2BjJ70TtrspZ5D/bKsE4sgGymsA7NFOahmYSsmIG1GWGld7nSmstDgNKayxTllNpcJpx+9xf7+RArm89TmhKmPfutQtZxljXYj18M7JQiMrvuZaxD00W8vpdiXdPjX8PUxjI9tblUpDZBCGROaUK/uRR1KeW2r6Ce4X7qicZYkPqPb8flzzig3DN8ET9EJ+ZCeA9ZXfcIq+tuYXbeTQ5YIzoyrUrpXS5Pm+5O2bzYSIEQmVI2AbsWkmRQ9HaNkIeQ8c6nl6imaYiKX40yNRC/ox673LNr32II74IsjtU1DWvTOMc6p32l1PGApDYZ4uTGRcR50yLBdaOqQdH2Gtp1ch+LxotdJz+ipdsrIbyTLMhkdrBkPniHnTun1iptPDwh3T1nY4kxZ+MiYiAfqbkvEbM3lghZ69v+RI/9e7WoP7GV1oG/HXiNAq3V2FdCO/fgR+bg1HGxDk4RIELhu8Z/WYXgydkbSsgmaGdIkzYEhV0HVR0kJzv7ktYH6YH2uZDcLsyDt0PocJvdh2/D39zC6pxy7ZfU2etLQnJYUkMxD7UpFomj+kT0WOM9vK44te9O3NAtzLAbQsmtDNY4x8Lu63s5TWoItsvBietsQWJDEQ4AZL+uiGZxX8yZa6w/vc1HZsctZIVvwQEmC7NjMurJAj3nK+HJ1/dS6kRifVHdrHrI1unCA7geQcd6vF+4KY++/mgKDnDzGKyOm4QkFr75p72WO+Gp11cm1BVGPHU6oRYK1IUiAThrzf/Cb3vHJEgn2fnAjTYdk4wrB256UI37eYFvhweS2oRQYQSQA9Y5522cJ2zhRLIkHRMhnhBFv5rC7qtfPn9JzFi7sGrGGwUhiMMz1xYYQPxz53TIJxjm/gnd5oEbQuZ/Juq/uvi3C5fre3NPTn98OIE0AAAAAElFTkSuQmCC" InformativeScreenshot="79a841aa900afa258a285cf9a5b2d1be.png" Selector="&lt;html app='chrome.exe' title='XAUUSD 1791.570 ▼ −0.04% Unnamed' /&gt;" Url="https://vn.tradingview.com/chart/BaRpJgkx/" />
+                                </uix:NApplicationCard.TargetApp>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 119, 957, 804" Arguments="c:\users\pc\documents\uipath\automatic\automatic\usdchf\data_usdchf.xlsx" FilePath="C:\Program Files\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVFhH7Zc9SEJRGIZdo9B+pRoShwhChIoQhCBbgsgpGgJpKyKIaAmClqDBoSmyLQikrbaCppaksdvUGDQ1FjQ0fvlezpGjfefcn86FkF548Hr4vvO+nh/U2L+8lK6uO3XIL1O1gyA4wkYvzsQEY2JE2OjFmZjgTEwIG704ExOciQlhoxdnYoIzMSFs9Bo5LpEXqcpq+ADd+wWnDoWhZ3eWBjYKbojfBGAn90vH/CjFt/ON9zKIX/5WgNRhke5fnlz2bk4a4zOVtcY4ntUe6ytw+nBJ0MfXpxsIYzCG8Npabz0ATGEOle/OafFsx32GskcrTbUgkjOweVV2DRFEfnqE4WojO4TSGHp9f2NrQGQBrp9rwp7fe0l8OkXJpQkaLOVcuBoTbAC579gCeR6wLVyt9QA4hFhyCPsOIPVWqFgPwF1DGeji8bapFlgNoF45dcnlrYBQo/ZEcgaC0BYBQn8dJ7byPwIERfzs0KtzfIh0dGWGKZFLRxugd26MvEguT7KT+0HY6NW3kCET/cUsO7FfhI1eXJNNhI1eXJNNhI1e9SKntcki3n/N2lyx2De7iUsgzKBEqQAAAABJRU5ErkJggg==" InformativeScreenshot="42d337425cd20d6672a2679a890b0563.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Data_USDCHF.xlsx - Excel' /&gt;" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,397" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ClickType="Single" DisplayName="Click 'USDCAD'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba731ca2-1e78-4d61-aeb4-83886b64d420" Version="V1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="1722, 333, 9, 14" ElementType="Text" FriendlyName="'USDCAD'" FullSelectorArgument="&lt;webctrl aaname='USDCAD' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='USDCAD' tag='SPAN' type='' class='inner-zwnrr543 symbolNameText-zwnrr543' check:innerText='USDCAD' /&gt;" Guid="5973b264-f777-40d4-8e51-0c5996ae990c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVDhPYxAWV/pPKh4qmpTVjf7Pmrv8f1xiNoYikNiylZvh/FFNUD5lmkC4d8Ks/xXVrXA+DIPEQAbC+CiaQCau3bDjv5dfBFzM0MwebAuyYSiaQBikAaRx09Z9cIzuZAxNxOBBrUnpPwBSVGe8AoOarQAAAABJRU5ErkJggg==" InformativeScreenshot="d936f559264b1c65edfbb7589afc3c7e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USDCAD 1.29832 ▲ +0.19% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Kiểm tra đã được chuyển XAUUSD" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_16">
+                  <ui:WaitUiElementAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45ce9d1a-116d-40a4-bd86-931d38b0b1d6" InformativeScreenshot="b9cfda8f18bd1745c10dff7d25718b38" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Đô la Mỹ / Đô la Canada' tableRow='1' tag='DIV' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitUiElementAppear.Target>
+                </ui:WaitUiElementAppear>
+              </Sequence>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="604,4606" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" TemplatePath="Data.xlsx" WorkbookPath="USDCAD\Data_USDCAD.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="570,4334" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Data_USDCAD.xlsx - Excel" sap:VirtualizedContainerService.HintSize="528,4240" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="8390db28-ad30-4fea-b006-739d55f36e6e" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="494,3948" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1791.570 ▼ −0.04% Unnamed" sap:VirtualizedContainerService.HintSize="452,3854" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V2">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="418,3637" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Quet data 4H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '4h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="443, 122, 16, 16" ElementType="Text" FriendlyName="'4h'" FullSelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='4h' /&gt;" Guid="4bf6e2c1-e327-4bd1-996c-5b89b146db72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVDhPYxAWV/pPTTxqIOUYj4Er/8sn/f8vr4+Ljx3jNFDC8/9/TaoZqH/7v6bnbewuBIqDLILg2/8l0PRiMRCkEaQQu5c1w4/9FwXz2/7LhAP5niuh8hCMYaCozcf/yjZtQDZ2A5G9DFKLsACCUQ1UOvZfGa6AYgNBXvj4X0YJxqfUQJDrgBoQAY7A2IOAGC+jYIq9jI6pbiB5eNRASrHSfwCt6E0fvXSLtAAAAABJRU5ErkJggg==" InformativeScreenshot="d2c9816b9567465e16ed407a61ed2984.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.120 ▼ −0.71% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_17">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8030b0c-377b-4d87-9df1-e047e28824e7" InformativeScreenshot="ff28c5f87490849960960b1fada8822b" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_25" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_26" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 30m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '30m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="321, 122, 27, 16" ElementType="Text" FriendlyName="'30m'" FullSelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='30m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='30m' /&gt;" Guid="40a3d5df-f2a5-41f7-903f-15979141252f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUCAYAAAB1aeb6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVEhL7ZPBDYMwDEW7Q4XKAQkpnHpiARZgAu4Mwy4swhJMwQQuOHH4LggVipoeOPyD+Y6f7YTb/WEolC54EP0XPCoGetZkVXUUKb+hpHLepLIFb78U3IJ7il0clxqgY9tIVjTe3yuArxTL+7kZ01FWD5QYyXe+bIf9MZfPwGb4u4thsEmbd64mxUZE2JBAJN9D5cxyuFX4fO8Awym9WkoVHDezhHFduMbNyVXBg/A0l3gvHLv/aO2H4dMUOlnBF8VH4Ta+nZxNWC3HMO3mr3bG2hnAj+3twbFsQe9DoVPgv9QFD6KAcEMvU9qfBRdbL8IAAAAASUVORK5CYII=" InformativeScreenshot="2025198fa710c9ac881a14a7e78bd89e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.935 ▼ −0.66% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_18">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8c9965e-c980-4298-aab3-3ff91f63226e" InformativeScreenshot="61bed36f99ba34021b1d766d7c4b3fd9" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_27" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_28" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 1H" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '1h'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="360, 122, 16, 16" ElementType="Text" FriendlyName="'1h'" FullSelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1h' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-ne4BePNC' check:innerText='1h' /&gt;" Guid="8aada873-9a7b-4407-9bb6-6c2680921017" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVDhPYxAWV/pPTTxqIOUYt4H6t/9rhh/7L4okJuH5/7+m50pUdWgYu4Egw5KAmik3cOV/eZBBSR//y3t+xGHgbagaCJbXR9aPxUAZmzYwW9QGh4FAy2SUIHywmqTb/yWQ1OAMQ5wGIntZ6dh/ZSQLQHjUQAQe/AaSi0cNpBQr/QcAUe1CzmLuF/gAAAAASUVORK5CYII=" InformativeScreenshot="1cc4206e6285ed0f64dcc1d46fcd2a91.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1735.235 ▼ −0.7% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_19">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e017635b-101e-417e-9d2a-a746a62f99cd" InformativeScreenshot="2b72a0ca9e1b5390ba13b246175adff8" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_29" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_30" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <Sequence DisplayName="Quet data 5m" sap:VirtualizedContainerService.HintSize="376,791" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click '5m'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="250, 122, 19, 16" ElementType="Text" FriendlyName="'5m'" FullSelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='5m' parentid='header-toolbar-intervals' tag='DIV' type='' class='value-e0RYyFXU' check:innerText='5m' /&gt;" Guid="111f3e09-96f4-42e5-b22f-12d607a810f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVEhL7ZK9DYMwFISzQ4RCgRTJrqiygBdgAnqGYRcvwhJMwQQX/wj7PeNIAYdUFFfwdHz23fPt/hA4Sxc8q//C6w5oB6oFjeCeb5XANZ7DjJrNjovDxQTZT6jojMimkkqj6XkqmlaqMfg5/DUb+BKMaSUeEmcrNADN/y1JzuCVsmBSizMnsE4HfwrztUb/ZqGpKDALZzXuhLs05fDRLYouxMoC11nRzfOdx+/iWvwBBvLptfyy8xJd8KxOhAu8AZvLp+CTtRweAAAAAElFTkSuQmCC" InformativeScreenshot="31a7c0a82f496859bb0b3cdb0a1eddd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1762.935 ▲ +0.04% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_20">
+                                          <ui:WaitUiElementAppear.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="acbafb7a-13db-4bc5-b7cf-4a4a04216c7f" InformativeScreenshot="756cda3ffd7bb0a15d2ef81230d5bf6e" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='1' tag='DIV' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:WaitUiElementAppear.Target>
+                                        </ui:WaitUiElementAppear>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A2&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Khoi luong'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_31" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="64, 166, 989, 307" FriendlyName="'Vàng /'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" Guid="885290ed-205b-4a31-8d20-531590268794" InformativeScreenshot="a87b636a9e5aeaf03742b0e9a7d3e39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1791.095 ▲ +0.09% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A5&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='RSI'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_32" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="68, 478, 854, 24" FriendlyName="'1RSI14 close'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div' tableRow='3' tag='DIV' /&gt;" Guid="ed71428e-71a6-4e79-a9c8-b6fbab4023b4" InformativeScreenshot="3679822fcf03701bad902939857ae857.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XAUUSD 1790.930 ▲ +0.08% Unnamed' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                      </Sequence>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'Unnamed'" sap:VirtualizedContainerService.HintSize="376,157" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f2f2e011-a26c-4584-be64-1a1c8c8bc487" Version="V1">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://vn.tradingview.com/chart/BaRpJgkx/" DesignTimeRectangle="1532, 167, 61, 16" ElementType="Text" FriendlyName="'Unnamed'" FullSelectorArgument="&lt;webctrl parentid='header-toolbar-save-load' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='header-toolbar-save-load' tag='SPAN' type='' class='text-Hx6V7_UR' aaname='Unnamed' check:innerText='Unnamed' /&gt;" Guid="1e72d88b-0566-4857-b054-7f58f3611973" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAAUCAYAAADStFABAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVFhH7ZQxjsJADEX3DlvQcw4qSk4RcYAcIDlAOoq0KSPRIiHRcjWvxx4nthO0CkFaVrj4xYw93/abTL6+N1v4dAUEVEBABQRUQEApCCWcbheo9jYhaVdf4HpuYOf2/5/SjHc4He1+QEAth7BvoL91UKU9NCQpQJTbNlCdcwzV1wfldzAxHy/atC5VDveU9ufyZTCJXdtSxXI/Q6x7JQRdjJuQxqToUOjY4Vp8MwDVKOePdXlYv1aDk18HBZ33N8v+thfJHb1eBMHmkXkezOSSfKNOzk97kczQSWOfVMvdvHyphQMynn0jCHIrrF8gTPw433poJQhzdRnMn0MYGn/gtxiC/xJM3mII8wlJptgqCDOgV0CY1tJ66jlkU/P+UNSkOrgagm6C188+BzmvBzX13f+EvE19loFAooOczLIDr4OAMv7Jxw6yDAIqX9LgaXLlYjnW143tJWsK4QMVEFABARUQUAFhs4UfzG8a3LRWJ3UAAAAASUVORK5CYII=" InformativeScreenshot="ecbd5f543820256b1c76e700213c1d62.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USDJPY 137.477 ▲ +0.41% Unnamed' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="376,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="79a841aa900afa258a285cf9a5b2d1be.png" Selector="&lt;html app='chrome.exe' title='XAUUSD 1791.570 ▼ −0.04% Unnamed' /&gt;" Url="https://vn.tradingview.com/chart/BaRpJgkx/" />
+                                </uix:NApplicationCard.TargetApp>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 119, 957, 804" Arguments="c:\users\pc\documents\uipath\automatic\automatic\usdcad\data_usdcad.xlsx" FilePath="C:\Program Files\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVFhH7Zc9SEJRGIZdo9B+pRoShwhChIoQhCBbgsgpGgJpKyKIaAmClqDBoSmyLQikrbaCppaksdvUGDQ1FjQ0fvlezpGjfefcn86FkF548Hr4vvO+nh/U2L+8lK6uO3XIL1O1gyA4wkYvzsQEY2JE2OjFmZjgTEwIG704ExOciQlhoxdnYoIzMSFs9Bo5LpEXqcpq+ADd+wWnDoWhZ3eWBjYKbojfBGAn90vH/CjFt/ON9zKIX/5WgNRhke5fnlz2bk4a4zOVtcY4ntUe6ytw+nBJ0MfXpxsIYzCG8Npabz0ATGEOle/OafFsx32GskcrTbUgkjOweVV2DRFEfnqE4WojO4TSGHp9f2NrQGQBrp9rwp7fe0l8OkXJpQkaLOVcuBoTbAC579gCeR6wLVyt9QA4hFhyCPsOIPVWqFgPwF1DGeji8bapFlgNoF45dcnlrYBQo/ZEcgaC0BYBQn8dJ7byPwIERfzs0KtzfIh0dGWGKZFLRxugd26MvEguT7KT+0HY6NW3kCET/cUsO7FfhI1eXJNNhI1eXJNNhI1e9SKntcki3n/N2lyx2De7iUsgzKBEqQAAAABJRU5ErkJggg==" InformativeScreenshot="86d8cac51ea8ede812e1e2eae88c913a.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Data_USDCAD.xlsx - Excel' /&gt;" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAlNSURBVHhe7Z09jyTVFYb7J7Tmo4ewp1d2ygSkaCVSSxg7s2V5iSxLSBCRIFm7EhEiWJHhxJk/AuSNINhgNjAWRCZAjpddyAHnq6FPTZW3pvednqrqe6pu3/O80iPtTvXH6Tvnvfee07d7ZmNqPl/O58fLs4OT1TtHJ6v7h4vVg4OT08fG4cnqAuJgv/N1Dnx1eHLrkeWC5cT8aHm7TpVyZElvL85e6MFi9b0aDICr3Hp0eLy8M39puazTaL/UTnr9AgG6cmmGOrXyVpX4i9VdZnpITbVVXudWlqsCiQ9j0RihTr3pZYULRSyMjeXcpEWzzfpVJ0cEBzAWloOWi3VajiPbhzHrQy5Uq8FYtUG15WGvD5lR5eRi+Uadpj66bG3qAABywHK0Tte0OlpX3uoJAXIjeZeImR/2jWQrge2r1BMA5M7ObdKq20PBC3uK5e7g7tDleR5anbDfVC3SIe8T8CYXlILlcp3W3TRf3GLfD0XRqx5g6wOl0XkrRL8fSmWd2/fqNNfijA+UTNUV2rYKMPtD6WxdBZj9oXSuXQXsc5fqDgClIY9J8AF2CMR5nfaXsuJX3AigWK5sg9j+QDSubIPY/kBAnm+DxEWAovl/N8jOSKgbAJSOfU8tn/aCsFR1AMeeISrVMWkKYAjLYvXAzv98JS8CFI4d/eH8D4SlMoC6ABAFDAChwQAQGgwAocEAEBoMAKHBABAaDAChwQAQGgwAocEAEBoMAKHBABAaDAChwQAQGgwAocEAEBoMAKHBABAaDAChwQAQGgwAocEAEBoMAKHBABAaDJAxpz97+eKtt9+9+Ns/Prn4+uv/Xvzw4/8uGtm/7Wd2zW5jt1WPAdtxM0BkqfHow9krr158/Oe/XEn4Lvrr3z+p7qseMxW3X/tF/Wz5yCYCFWsXMICD1Hh0wWZxS/xdZY/htSLYipOTnj17Vq2AKtYuYAAHqfG4CZu5nzz9tn6E3fXNk2+Trwb2eLnJXqeKtSsYwEFqPLZh24qUyd/IksMeWz3nEGymzU227VOxdgUDOEiNx3Wknvk3lXIl8IxziGz7s+trwwAOUuOhsH36GEllJti1Jvj9m3+sHy0fffrZQxlrHzCAg9R4KFIUvF1lz6Vi6Mrn//6yfqQ8ZLP/67/6jYy1DxjAQWo8Nhm7oNxluzB2rF20a/HbgAEcpMZjkynaiUNXgdJan20wgIPUeLRZ/fysvuW4sjfWhtQCJRa/DRjAQWo82kzVThwyc5bY+myDARykxqPNlFuKvsljxwxykpk45XsbGMBBajzaTJlUfc7N/PLXv63vlY/+9fkXMtahYAAHqfFo0/eQW0rZc6uYFCUXvw0YwEFqPNpMKUsiFdMmJbc+22AAB6nxaDOluhqg9OK3AQM4SI1Hm33YApXc+myDARykxqNN7kVwlNnfwAAOUuPRJvc2aKnnfhQYwEFqPNpMNcN26aJEKX4bMICD1Hi0saMQU9QBZoCbjkJEaH22wQAOUuOxyZhHoRt12f5EKX4bMICD1HhsMvZWo0siRSp+GzCAg9R4KHL7QEy02d/AAA5S46GwWuDJ0+/qe/np8iORZzKGhgjnfhQYwEFqPK7DZjhPE1jyd5lFoxW/DRjAQWo8tnH5tSjpTWDJ3+Xo8Nj1SBd5tj7bYAAHqfG4idQrQdeZ33jvT+/X98pHu36IvysYwEFqPLpgNUGKwtge46Y9f5uIxW8DBnCQGo8+2C+/757c3lizxO+bOBFbn20wgIPUeAzBZnFLUDODHWJrv3ts/7af2TW7TZ8Zv02kcz8KDOAgNR45YqtFbhqr+G1wM8CUTC0VU45EbX22wQAOUjHlxuWbcHkVv7atG6v4bcAADlIx5Ub04rcBAzhIxZQbkVufbTCAg1RMOWFdltw0xrkfBQZwkIopJyh+n4MBHKRiygVan1fBAA5SMeXCBx9+VEeZjywmFesYYAAHqZhygeL3KhjAQSqmHKD1+SIYwEEqphyIfu5HgQEcpGKaGopfDQZwkIppamh9ajCAg1RMU2Kz/xRfxLVNNvvv+reLU4ABHKRimhKK3+vBAA5SMU0Jrc/rwQAOUjFNBed+toMBHKRimgqK3+1gAAepmKaA1ufNYAAHqZimIMVXrKSWfQeRinUqMICDVExTQPF7MxjAQSqmsaH12Q0M4CAV09hw7qcbGMBBKqYxofjtDgZwkIppTGh9dgcDOEjFNBbM/v3AAA5SMY0FxW8/MICDVExjQeuzHxjAQSqmMeDcT38wgINUTGNA8dsfDOAgFZM3FL/DwAAOUjF5w+w/DAzgIBWTNxS/w8AADlIxeULrczgYwEEqJk849zMcDOAgFZMX9oewc5P98T4Va45gAAepmLyg+N0NDOAgFZMHtD53BwM4SMXkAcXv7mAAB6mYPKD1uTsYwEEqptRw7icNGMBBKqbUfPrZw/rZ8pDN/r+78wcZa85gAAepmFJC8ZsODOAgFVNKaH2mAwM4SMWUEorfdGAAB6mYUkHrMy1FGsBmpClRMaXCjhmo55wSO46hYt0HijQAQFcwAIQGA0BoMACEBgNAaDAAhAYDQGgwAIQGA0BoMACEBgNAaDAAhAYDQGgwAIQGA0BoMACEBgNAaDAAhAYDQGhmByenj9UFgNKx3McAEJfF6X9mh4vVA3kRoHzOZ0cnq/viAkDxWO6vt0Crd9RFgNKx3J/Nj5dn6iJA6cyPlrdn8/lyfrBYfa9uAFAys0br/5xvXgQonPM6/WfUARCP4+WdOv1n1TZI3gigUOYvLZd1+l9q/UO2QRCF59ufRmyDIAzt7U8jukEQger8z3U6WqzuqTsBlMJ6kr9bp/uLYhWAkrHZ/4Xid1OsAlAqW2f/RtUqwBFpKIyte/9N2RkJ9SAA+0p17qePOCYNpVAde+4rtkJQAlXhu87lOq37ySpmukKwr1ju3tj1uUnUA7C3LJZv1Gm8mzgmAftG9WmvlOL9AdgXOvX7h4iVAHIn+cy/KdtXURhDblQFb99e/1BV3SFapJAJVatz125PX1lvlTfLYGosBwf3+VOo2hKxGsDIVLP+WFueLrIuEUYAb2yvv861u5PO+tfJ9mEYATzIOvGV7HOX68D5oD3syrm1Nvcm8TdlqwJmgK7ULfb9TvptssLFXlzdQTq372hnyxQP+53Xv/d/Wi5UCX+8PBs36WeznwAUfO7nf16rHwAAAABJRU5ErkJggg==" InformativeScreenshot="429fe055a41a09a988f9c83096959774.png" Selector="&lt;html app='chrome.exe' title='XAUUSD 1762.180 0% Unnamed' /&gt;" Url="https://vn.tradingview.com/chart/BaRpJgkx/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
