@@ -150,7 +150,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[Excel.Sheet(&quot;XauUsd&quot;).Cell(&quot;A12&quot;) &gt; 0]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_9">
+                  <If Condition="[Excel.Sheet(&quot;XauUsd&quot;).Cell(&quot;A12&quot;) &gt; 50]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_9">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="476,982" sap2010:WorkflowViewState.IdRef="Sequence_32">
                         <sap:WorkflowViewStateService.ViewState>
@@ -264,7 +264,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[Excel.Sheet(&quot;UsdJpy&quot;).Cell(&quot;A12&quot;) &gt; 0]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If Condition="[Excel.Sheet(&quot;UsdJpy&quot;).Cell(&quot;A12&quot;) &gt; 50]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_10">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="476,982" sap2010:WorkflowViewState.IdRef="Sequence_35">
                         <sap:WorkflowViewStateService.ViewState>
@@ -378,7 +378,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[Excel.Sheet(&quot;UsdChf&quot;).Cell(&quot;A12&quot;) &gt; 0]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_11">
+                  <If Condition="[Excel.Sheet(&quot;UsdChf&quot;).Cell(&quot;A12&quot;) &gt; 50]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_11">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="476,982" sap2010:WorkflowViewState.IdRef="Sequence_38">
                         <sap:WorkflowViewStateService.ViewState>
@@ -492,7 +492,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[Excel.Sheet(&quot;XauCad&quot;).Cell(&quot;A12&quot;) &gt; 0]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_12">
+                  <If Condition="[Excel.Sheet(&quot;XauCad&quot;).Cell(&quot;A12&quot;) &gt; 50]" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="If_12">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="476,982" sap2010:WorkflowViewState.IdRef="Sequence_41">
                         <sap:WorkflowViewStateService.ViewState>
