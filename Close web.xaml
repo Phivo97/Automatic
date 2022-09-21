@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Close_web" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="665,769" sap2010:WorkflowViewState.IdRef="Close_web_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Close_web" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1231,831" sap2010:WorkflowViewState.IdRef="Close_web_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -62,19 +62,19 @@
       <AssemblyReference>System.Memory</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Close_web" sap:VirtualizedContainerService.HintSize="476,704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Close_web" sap:VirtualizedContainerService.HintSize="476,766" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1703.435 ▼ −0.44% Unnamed" sap:VirtualizedContainerService.HintSize="434,612" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="eaeef29f-c83e-4114-95b8-75f7a63b09d4" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: XAUUSD 1703.435 ▼ −0.44% Unnamed" sap:VirtualizedContainerService.HintSize="434,674" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="eaeef29f-c83e-4114-95b8-75f7a63b09d4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,396" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,458" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -97,6 +97,7 @@
                 <uix:TargetAnchorable DesignTimeRectangle="295, 87, 68, 32" ElementType="Button" FriendlyName="'Leave'" FullSelectorArgument="&lt;ctrl name='Leave site?' role='dialog' /&gt;&lt;ctrl name='Leave' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Leave site?' role='dialog' /&gt;&lt;ctrl name='Leave' role='push button' automationid='' check:fulltext='Leave' /&gt;" Guid="84034bd7-1d2d-4233-b807-efd208931766" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAkCAYAAAAq23xmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALoSURBVGhD7Zq7bhpBFIbzHFaUNpcHIC+QvEBIlSegc2EpVhSJCndJGRTRWRSOuy0s2VUkChIpQTQgUYAUhCiymMuuQ3YBA3/Omd0Di8OkIMZOtPNLv2aY23I+zYy0O3MHRn/UCqBiY4xkto8Hr23s7H2PlTlmjp0ZRLUA9Obsx9qOcTSzEClATI0r7hPFD188ON5cVcZNHDszYBafv01VmQL07F1PFZ5WRjirjvD0bXdBMy5+fHCuYmdI/Pv5e2cJSPYcFjeMdoyTeWLw6uH8o3RX8VCA7r48V47m42phcO9VX+UVICEYzcfVwkBgGUBXLAwMII2FgQGksTAwgDQWBgaQxsJgi4A81Gkcp3Gxpu7ftzAwgDQWBgaQxsLgFgB1sF++RPCGQ/ImOMx3VN1BbbosxwzVT33sFCaUn6N0EvbP+mhRSatM740ZF5Y9U61ZTvsnUpnoszY3i9MbB5SggP3JJSyGkhnA6lGjno8k1e2eDLGbZVhdHNpU7o2xv3eBEjHym8E4yTK/XRPUTAe59hy+7SsoiXwEXOR5m5rF6Y0DOubAr4pApKnuRWGEujsjgKvlB815mO8E/WmmJMLxr+q6ljSL09sB5I6QipQp0wzgqlbZwRP6nW7Q0gkB7RyNqG6GosVjynILxrdrg9VxrsksTrcPqDlEKj8InOuGS2SOugLRQdLyUaoQRGtM+88c1UIXiewQJY+aCaA9Bx9dguFS30VZL1ievFyPurRce0hXxji1ov9hc7M43TqgFdn8EaqPXGMKPyyCN0WpwPtGn2ZX+AWTgi62IzOInKINnGXXnHB8cm6IYm/51dNxx8hl5fl/ZxanWwT0f1sYGEAaCwMDSGNhYABpLAwMII2FgQGksTAwgDQWBgaQxsJgBZAct7LMwWFwcPgwenAYPXpmx/XomWNfe/Qslxf4CPqMGsX18sLxV39xDL9yeYFlrr8s/dv1FxHPJF5usifFyRwzx669QGW0TsAvlYAEzjGJ0k0AAAAASUVORK5CYII=" InformativeScreenshot="b85b8873ee5028623046019676afde5e.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Leave site?' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
+            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
